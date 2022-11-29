@@ -13,7 +13,7 @@ const ProjectCard = ({ children }) => {
   return (
     <Card
       borderRadius="lg"
-      bg={useColorModeValue('teal', 'lemonYellow')}
+      bg={useColorModeValue('teal', 'almostWhite')}
       textColor={useColorModeValue('almostWhite', 'gray.900')}
       fontFamily="reef"
       fontSize="2xl"
@@ -35,7 +35,9 @@ const Projects = () => {
         </Heading>
       </Box>
 
-      <SimpleGrid columns={3} spacing={10} align="center" mt={8}>
+      <SimpleGrid columns={3} spacing={10} align="center" mb={6} mt={10}>
+        <ProjectCard>Hello</ProjectCard>
+        <ProjectCard>Hello</ProjectCard>
         <ProjectCard>Hello</ProjectCard>
       </SimpleGrid>
     </Container>
