@@ -9,9 +9,9 @@ const ThemeButton = () => {
       <motion.div
         style={{ display: 'inline-block' }}
         key={useColorModeValue('light', 'dark')}
-        initial={{ y: -30, opacity: 0.5 }}
+        initial={{ y: -20, opacity: 0.5 }}
         animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 30, opacity: 1 }}
+        exit={{ y: 20, opacity: 1 }}
         transition={{ duration: 0.2 }}
       >
         <IconButton
