@@ -5,20 +5,21 @@ import {
   SimpleGrid,
   Card,
   CardBody,
-  Text,
+  CardHeader,
+  Stack,
   useColorModeValue
 } from '@chakra-ui/react'
 
 const ProjectCard = ({ children }) => {
   return (
     <Card
-      borderRadius="lg"
       bg={useColorModeValue('teal', 'almostWhite')}
       textColor={useColorModeValue('almostWhite', 'gray.900')}
       fontFamily="reef"
       fontSize="2xl"
+      maxW="container.md"
     >
-      <CardBody>{children}</CardBody>
+      <CardHeader>{children}</CardHeader>
     </Card>
   )
 }
@@ -35,10 +36,17 @@ const Projects = () => {
         </Heading>
       </Box>
 
-      <SimpleGrid columns={3} spacing={10} align="center" mb={6} mt={10}>
+      <SimpleGrid
+        display={{ base: 'inline-block', md: 'flex' }}
+        justifyContent="center"
+        columns={3}
+        spacing={10}
+        mb={6}
+        mt={10}
+      >
         <ProjectCard>Hello</ProjectCard>
         <ProjectCard>Hello</ProjectCard>
-        <ProjectCard>Hello</ProjectCard>
+        <ProjectCard>hello</ProjectCard>
       </SimpleGrid>
     </Container>
   )
