@@ -6,8 +6,7 @@ import {
   Stack,
   IconButton,
   Heading,
-  useColorModeValue,
-  useColorMode
+  useColorModeValue
 } from '@chakra-ui/react'
 import { SiLinkedin, SiInstagram } from 'react-icons/si'
 import { IoLogoGithub } from 'react-icons/io5'
@@ -120,7 +119,7 @@ const Home = () => {
               fontSize: '18px'
             }}
           >
-            Cipher
+            Edo
           </span>
           !
         </Text>
